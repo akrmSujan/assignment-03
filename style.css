@@ -8,3 +8,53 @@
     font-family: "Sora", serif;
     font-optical-sizing: auto;
   }
+  .box ul li{
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    list-style: none;
+   background: rgb(5, 101, 133);
+   box-shadow: 0 0 30px deepskyblue;
+    bottom: 0;
+    z-index: -2;
+    box-sizing: border-box;
+    border-radius: 50%;
+    left: 10vw;
+    animation: animate 7s linear infinite;
+}
+.box ul li:nth-child(2) {
+  top: 100px;
+  animation-delay: 1s;
+}
+.box ul li:nth-child(3) {
+  top: 140px;
+  animation-delay: 2s;
+}
+.box ul li:nth-child(4) {
+  top: 180px;
+  animation-delay: 2s;
+}
+.box ul li:nth-child(5) {
+  top: 220px;
+  animation-delay: 3s;
+}
+.box ul li:nth-child(7) {
+  top: 260px;
+  animation-delay: 3s;
+}
+.box ul li:nth-child(8) {
+  top: 300px;
+  animation-delay: 5s;
+}
+@keyframes animate {
+    0%{
+        transform: scale(0);
+        opacity: 0;
+            left: 0;
+    }
+    100%{
+      transform:scale(2);
+      opacity: 0.3;
+      left: 100%;
+    }
+}
