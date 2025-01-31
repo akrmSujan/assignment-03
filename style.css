@@ -10,21 +10,21 @@
   }
   .box ul li{
     position: absolute;
-    width: 20px;
-    height: 20px;
+    width: 15px;
+    height: 15px;
     list-style: none;
-   background: rgb(5, 101, 133);
-   box-shadow: 0 0 30px deepskyblue;
+    box-shadow: 0 0 60px 20px rgba(249, 223, 138, 0.9);
+    background: linear-gradient(134.71deg, rgb(255, 249, 244) 1.511%,rgb(249, 223, 138) 100%);
     bottom: 0;
-    z-index: -2;
+    z-index: -4;
     box-sizing: border-box;
     border-radius: 50%;
-    left: 10vw;
-    animation: animate 7s linear infinite;
+    left: -10vw;
+    animation: animate 9s linear infinite;
 }
 .box ul li:nth-child(2) {
-  top: 100px;
-  animation-delay: 1s;
+  top: 80px;
+  animation-delay: 8s;
 }
 .box ul li:nth-child(3) {
   top: 140px;
@@ -32,19 +32,27 @@
 }
 .box ul li:nth-child(4) {
   top: 180px;
-  animation-delay: 2s;
+  animation-delay: 5s;
 }
 .box ul li:nth-child(5) {
   top: 220px;
-  animation-delay: 3s;
+  animation-delay: 7s;
+}
+.box ul li:nth-child(6) {
+  top: 260px;
+  animation-delay: 1s;
 }
 .box ul li:nth-child(7) {
-  top: 260px;
-  animation-delay: 3s;
+  top: 300px;
+  animation-delay: 6s;
 }
 .box ul li:nth-child(8) {
-  top: 300px;
-  animation-delay: 5s;
+  top: 340px;
+  animation-delay: 3s;
+}
+.box ul li:nth-child(9) {
+  top: 380px;
+  animation-delay: 4s;
 }
 @keyframes animate {
     0%{
@@ -54,7 +62,7 @@
     }
     100%{
       transform:scale(2);
-      opacity: 0.3;
+      opacity:2;
       left: 100%;
     }
 }
